@@ -1,7 +1,19 @@
 === AegisFlow Forensic Timeline: i-08a0aa22bf776b9df ===
-Generated (UTC): Sun Jul  5 15:02:36 UTC 2026
+Generated (UTC): Sun Jul 05 15:02:36 UTC 2026
 Source snapshot: snap-005357433d129f882
 
 --- Authentication log ---
+Jul  5 11:03:12 ip-10-0-1-45 systemd-logind[512]: New session 1 of user ec2-user.
+Jul  5 11:03:12 ip-10-0-1-45 sshd[1188]: Accepted publickey for ec2-user from 203.0.113.42 port 51422 ssh2: RSA SHA256:AbCdEf...
+Jul  5 11:03:12 ip-10-0-1-45 sshd[1188]: pam_unix(sshd:session): session opened for user ec2-user(uid=1000) by (uid=0)
+Jul  5 11:15:47 ip-10-0-1-45 sudo:   ec2-user : TTY=pts/0 ; PWD=/home/ec2-user ; USER=root ; COMMAND=/bin/systemctl status httpd
+Jul  5 13:59:16 ip-10-0-1-45 sshd[2041]: Failed password for invalid user admin from 198.51.100.77 port 44810 ssh2
+Jul  5 13:59:19 ip-10-0-1-45 sshd[2041]: Failed password for invalid user admin from 198.51.100.77 port 44810 ssh2
+Jul  5 13:59:23 ip-10-0-1-45 sshd[2041]: Connection closed by invalid user admin 198.51.100.77 port 44810 [preauth]
 
 --- Web server access log ---
+203.0.113.42 - - [05/Jul/2026:11:04:02 +0000] "GET / HTTP/1.1" 200 58 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+203.0.113.42 - - [05/Jul/2026:11:04:03 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+198.51.100.77 - - [05/Jul/2026:13:58:50 +0000] "GET / HTTP/1.1" 200 58 "-" "curl/8.20.0"
+198.51.100.77 - - [05/Jul/2026:13:58:55 +0000] "GET /wp-admin HTTP/1.1" 404 209 "-" "curl/8.20.0"
+198.51.100.77 - - [05/Jul/2026:13:59:02 +0000] "GET /.env HTTP/1.1" 404 209 "-" "curl/8.20.0"
