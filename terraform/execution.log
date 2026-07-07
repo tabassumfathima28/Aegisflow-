@@ -1,0 +1,5 @@
+[AegisFlow-Forensic] Starting analysis for i-08a0aa22bf776b9df
+mount: /mnt/forensic: /dev/nvme1n1 already mounted or mount point busy.
+Completed 202 Bytes/202 Bytes (2.4 KiB/s) with 1 file(s) remainingupload: tmp/aegisflow-report/timeline.txt to s3://aegisflow-forensic-reports-276833795973/forensic-reports/i-08a0aa22bf776b9df/timeline.txt
+Completed 150 Bytes/150 Bytes (1.2 KiB/s) with 1 file(s) remainingupload: tmp/aegisflow-report/supporting_artifacts.txt to s3://aegisflow-forensic-reports-276833795973/forensic-reports/i-08a0aa22bf776b9df/supporting_artifacts.txt
+[AegisFlow-Forensic] Upload complete, shutting down.
